@@ -10,7 +10,8 @@ This client runs on _port 3000_.
 npm install -> npm start 
 or
 yarn install && yarn start
-```
+
+````
 
 ### Autocomplete Search 
 Implemented an autocomplete search of business names.
