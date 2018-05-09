@@ -4,10 +4,12 @@ import React from 'react';
 
 let EachData = (props) => {
     return (
-    <div className="eachData"> 
+    <div className="each-data-container">
+    <div className="each-data"> 
         <h2>{props.attributes.business_name}</h2>
-        <p>{props.type}  </p>
-        <p>{props.attributes.city}, {props.attributes.state} </p>
+        <p>Type: {props.type}  </p>
+        <p>Location: {props.attributes.city}, {props.attributes.state} </p>
+    </div>
     </div>
     )
 }

@@ -35,6 +35,10 @@ class Collection extends React.Component {
     render () {
     return (
         <div id="collection">
+            <div className="intro">
+                <h1>Ground Floor Front-End Project</h1>
+                <p> by Jaehee Kim </p>
+            </div>
             <div className="search-bar">
                 Search Business <SearchBar 
                     handleSearchChange={this.handleSearchChange}
