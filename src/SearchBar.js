@@ -12,10 +12,19 @@ class SearchBar extends React.Component {
         this.setState({ value: e.target.value})
         this.props.handleSearchChange(e.target.value)
     }
+    
     render() {
+    //no drop down showing when input has no value.
+    var searchData = [];
+    if (this.state.value !== '') {
+      searchData = this.props.data;
+    } else {
+      searchData = [];
+    }
+
       return (
         <Autocomplete
-          items={this.props.data}
+          items={searchData}
           shouldItemRender={(item, value) => item.attributes.business_name.toLowerCase().indexOf(value.toLowerCase()) > -1}
           getItemValue={item => item.attributes.business_name}
           renderItem={(item, highlighted) =>
