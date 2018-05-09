@@ -27,7 +27,7 @@ class Collection extends React.Component {
             const data = res.data.data;
             this.setState({
             data: data,
-            dataDisplay: data
+            dataDisplay:data
             });
         });
     }
