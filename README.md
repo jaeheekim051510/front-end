@@ -7,10 +7,9 @@ This is client portion of the project, served with back end from this [repositor
 This client runs on _port 3000_.
 
 ````
-npm install -> npm start 
+npm install && npm start 
 or
 yarn install && yarn start
-
 ````
 
 ### Autocomplete Search 
